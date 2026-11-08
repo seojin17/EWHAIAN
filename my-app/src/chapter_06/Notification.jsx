@@ -42,3 +42,5 @@ componentWillUnmount() {
         );
     }
 }
+
+export default Notification;
