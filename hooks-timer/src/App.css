@@ -1,0 +1,45 @@
+.timer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.timer-time {
+  margin: 0;
+  font-size: clamp(80px, 18vw, 140px);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.timer-buttons button {
+  padding: 14px 30px;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  background: #f3f3f3;
+  color: #222;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.timer-buttons button.running,
+.timer-buttons button:focus {
+  border-color: #222;
+}
+
+.timer-buttons button:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 4px;
+}
+
+.timer-buttons button:hover {
+  border-color: #646cff;
+}
